@@ -70,7 +70,7 @@ const Menu = [
     category: "lunch",
     price: "60₹",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto.Accusamus quas,  ",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto.   ",
   },
   {
     id: 9,
