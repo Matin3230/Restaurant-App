@@ -6,7 +6,7 @@
 }
 
 html {
-  background: #0d171b;
+  background: #101618;
   background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
@@ -32,27 +32,30 @@ html {
   grid-template-columns: repeat(3, minmax(300px, 500px));
   grid-gap: 50px;
   justify-content: space-around;
+  margin-bottom: 70px;
 
 }
 
 .card-container {
-  margin: 40px auto 280px; 
+  margin: 40px auto 0px; 
   position: relative;
   display: grid;
-  height: 300px;
+  height: 600px;
   width: 450px; 
   grid-template-columns: 1fr;
   justify-content: space-around;
   background: rgb(12, 12, 12);
     box-shadow: 0px 0px 50px rgb(30, 30, 30);
     color: #fff; 
+    border-radius: 20px;
     
   
 }
 
 .card-container:hover{  
    transform: translateY(-10px);
-    box-shadow:0px 70px 90px 20px rebeccapurple;
+   transition-duration: 1.3s ;
+    box-shadow:0px 0px 90px 20px rebeccapurple;
 }
 
 .card-container img {
@@ -66,7 +69,9 @@ html {
   position: relative;
   box-shadow: 0 0 5px rgba(187, 61, 61, 0.07);
   z-index: 1; 
+  height: 600px;
   border-radius: 100px;
+  border: 3px solid white;
   
   
 }
@@ -84,9 +89,9 @@ html {
 }
 
 .card-circle {  
-    float: left;
+  float: left;
     
-    border: 1px solid #aaa;
+  border: 1px solid #aaa;
   border-radius: 50%;
   display: inline-block;
   line-height: 22px;
@@ -177,10 +182,87 @@ html {
 @media (max-width: 998px) {
   .main-card--cointainer {
     display: grid;
-    grid-template-columns: repeat(1, minmax(200px, 500px));
-    grid-gap: 50px;
+    grid-template-columns: repeat(2, minmax(200px, 500px));
+    grid-gap: 10px;
     justify-content: space-around;
   }
+
+  .card-container {
+  margin: 30px 0px 10px 10px; 
+  height: 470px;
+  width: 200px; 
+  }
+
+  .desc{
+    font-size: 8px;
+  } 
+
+  .card {
+  
+  height: 470px; 
+
+}
+
+.btn{
+  margin-top: 17px;
+  margin-right: 37px;
+}
+  
+
+  .card-author { 
+  font-size: 7px;
+  letter-spacing: 0.5px; 
+}
+  .card-description { 
+  font-weight: 200;
+  line-height: 18px;
+  margin: 10px 0;
+} 
+.img-t{
+  max-height: 200px;
+}
+
+  .card-media {
+    margin-right: 20px;
+  width:150px;
+  height:10px;
+  border: 2px solid rebeccapurple;
+  border-radius: 100px;
+}
+ 
+.card-media:hover{
+   opacity: 0.8;
+    transform: scale(1);
+}
+
+
+
+.card-circle {  
+  float: left;
+    
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 8px;
+  font-size: 7px;
+  height: 17px;
+  text-align: center;
+  width: 17px;
+}
+
+
+.card-title { 
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 20px;
+  margin: 10px 10px;
+  text-transform: capitalize;
+}
+
+.btn-group__item {
+ border-radius: 5px;
+}
+ 
 }
 
 /* ---------- Button styles ------------------ */
